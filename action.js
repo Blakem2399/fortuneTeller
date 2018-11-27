@@ -5,8 +5,9 @@ let fortuneArray = [
     ', Its a Festivus Miracle!, Nothing bad happens!',
     ', Your grandmother will be ran over by a reindeer, The broken hip leads to severe medical debt'
 ];
+let fortuneSound = document.getElementById('Snow');
 
-let nameArray =['billy', 'bob','joe','ross', 'twat'];
+let nameArray =['billy', 'bob','joe','ross', 'trent'];
 let currentName = "";
 let currentFortune = "";
 
@@ -14,9 +15,7 @@ function getFortune() {
     let randomFortune = Math.floor((Math.random() * fortuneArray.length));
     let randomName = Math.floor((Math.random() * nameArray.length));
     setFortune(fortuneArray[randomFortune],nameArray[randomName]);
-
-
-
+    fortuneSound.play();
 }
 
 function setFortune(currentfortune,currentname) {
