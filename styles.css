@@ -9,4 +9,5 @@ body, html {
 
 #Content, #output{
     color: white;
+    margin: 5px;
 }
